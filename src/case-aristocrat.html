@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casino platform modernisation · Pooja Kudesia</title>
+  <meta name="description" content="How a governed design system and AI design-to-code cut design-to-development time 35% on Aristocrat's casino management platform.">
+  <meta property="og:title" content="Casino platform modernisation · Pooja Kudesia">
+  <meta property="og:description" content="How a governed design system and AI design-to-code cut design-to-development time 35% on Aristocrat's casino management platform.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F766E'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EPK%3C/text%3E%3C/svg%3E">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Pooja Kudesia<small>UX Leader &amp; Architect</small></a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html" aria-current="page">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact &amp; résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <header class="cs-hero">
+      <div class="container">
+        <p class="eyebrow"><a href="index.html#work">Case studies</a> / Aristocrat Technologies</p>
+        <h1>Cutting design-to-development time 35% on a casino management platform</h1>
+        <p class="lede">Aristocrat's casino management software runs cash, player and compliance workflows on live casino floors. I built the UX team that is moving it from legacy WinForms to Angular, and set the design system and accessibility rules every product team now ships against.</p>
+        <dl class="tldr"><div><dt>My role</dt><dd>Sr. Manager, UX. Built and lead the team</dd></div><div><dt>Timeline</dt><dd>2021 – present</dd></div><div><dt>Team</dt><dd><span class="todo">e.g. 6 designers, 2 UX writers, 1 design-engineer</span></dd></div><div><dt>Stack</dt><dd>Figma variables, Angular, HTML/CSS, Claude AI</dd></div><div><dt>Core constraint</dt><dd>Gaming regulation and 24/7 floor operations</dd></div><div><dt>Scope</dt><dd>Cross-product: <span class="todo">name the products / modules</span></dd></div></dl>
+        <h2 class="visually-hidden">Top outcomes</h2>
+        <ul class="outcomes"><li><strong>35%</strong>faster design-to-development</li><li><strong>WCAG 2.1 AA</strong>baked into shared components</li><li><strong>Achievers</strong>Award, plus G2E Las Vegas talk</li></ul>
+      </div>
+    </header>
+
+    <div class="container cs-layout">
+      <nav class="toc" aria-label="Case study sections"><ol><li><a href="#context">Context</a></li><li><a href="#problem">Stakes &amp; problem</a></li><li><a href="#research">Research</a></li><li><a href="#architecture">Architecture &amp; iteration</a></li><li><a href="#solution">Solution</a></li><li><a href="#impact">Impact</a></li></ol></nav>
+      <div class="cs-body">
+          <section id="context" aria-labelledby="context-h">
+            <span class="step-label">Context</span>
+            <h2 id="context-h">A platform casinos can't switch off, built on WinForms</h2>
+            <div class="prose">
+              <p>Casino operators use the platform to manage player accounts, cage and cash, floor operations and regulatory reporting. Several products had grown separately on WinForms, each with its own patterns. Staff trained on one module had to relearn another.</p>
+              <p><strong>What I owned:</strong> UX strategy, hiring and structure of the UX team, design system governance, accessibility standards, and the AI design-to-code initiative. <strong>What the team shipped:</strong> screen design, UX writing and component code across product lines.</p>
+            </div>
+          </section>
+          <section id="problem" aria-labelledby="problem-h">
+            <span class="step-label">Stakes &amp; problem</span>
+            <h2 id="problem-h">Every inconsistent screen was paid for twice: once in build time, once in operator error</h2>
+            <div class="prose">
+              <p><strong>Business problem.</strong> Modernising to Angular product by product would multiply the inconsistency unless the patterns were fixed first. Each team was redrawing the same tables, forms and approval flows, and engineers were rebuilding them.</p>
+              <p><strong>User problem.</strong> Floor and back-office staff work under time pressure with money and regulated data. Inconsistent patterns mean slower tasks and higher error risk.</p>
+              <p><strong>Cost of doing nothing.</strong> <span class="todo">Quantify: e.g. duplicated components per product, average handoff cycle in days, or audit findings</span></p>
+            </div>
+          </section>
+          <section id="research" aria-labelledby="research-h">
+            <span class="step-label">Research</span>
+            <h2 id="research-h">Handoff, not design, was where the time went</h2>
+            <div class="prose">
+              <p>Before proposing a system, I mapped where time was lost between a design decision and working code.</p>
+            </div>
+            <ul class="decision-list">
+              <li><h3>Finding 1: <span class="todo">e.g. most rework came from spec gaps, not design changes</span></h3><p><strong>Decision it changed:</strong> we put a design-engineer inside the UX team so specs shipped as Angular components, not static files.</p></li>
+              <li><h3>Finding 2: <span class="todo">e.g. accessibility defects were found late, in QA</span></h3><p><strong>Decision it changed:</strong> WCAG 2.1 AA rules moved into component tokens and states, so every product inherits them.</p></li>
+            </ul>
+            <figure class="figure">
+              <div class="slot" role="img" aria-label="Image placeholder: Handoff journey map"><div><strong>Handoff journey map</strong>Replace with your as-is design-to-dev journey (WebP, under 200 KB)</div></div>
+              <figcaption><p>Where a design decision stalled on its way to production</p><ol class="annotations"><li>Shows each handoff point between design, product and engineering.</li><li>Red markers are the steps that caused rework. These set the system's priorities.</li><li>Note the QA stage: this is where accessibility defects were surfacing.</li></ol></figcaption>
+            </figure>
+          </section>
+          <section id="architecture" aria-labelledby="architecture-h">
+            <span class="step-label">Architecture &amp; iteration</span>
+            <h2 id="architecture-h">A governed system, then AI to close the last gap</h2>
+            <ul class="decision-list">
+              <li><h3>Call 1: Fix the patterns before migrating the screens</h3><p>I chose to build the shared component and token library before teams ported modules to Angular. <span class="todo">What you said no to, e.g. a pixel-for-pixel port of WinForms screens, and why</span></p></li>
+              <li><h3>Call 2: Governance with a named owner and a review ritual</h3><p>Every new pattern goes through a design system review before it reaches a product team. <span class="todo">Describe the ritual: cadence, who attends, how exceptions are approved</span></p></li>
+              <li><h3>Call 3: Pilot Claude AI for design-to-code</h3><p>Once components and tokens were stable, I started an initiative using Claude to generate Angular scaffolding from design specs, with the design-engineer reviewing output.</p></li>
+            </ul>
+            <div class="callout"><p><strong>Iteration.</strong> <span class="todo">One thing you tried that didn't work and what changed. E.g. first AI output ignored tokens; you constrained prompts to the component library and quality jumped.</span></p></div>
+            <div class="prose"><p><strong>Alignment.</strong> <span class="todo">How you brought product directors, engineering architects and compliance along. One concrete example.</span></p></div>
+          </section>
+          <section id="solution" aria-labelledby="solution-h">
+            <span class="step-label">Solution</span>
+            <h2 id="solution-h">One pattern library across products, with accessibility enforced in code</h2>
+            <div class="compare">
+              <figure class="figure">
+                <div class="slot" role="img" aria-label="Image placeholder: Legacy WinForms screen"><div><strong>Legacy WinForms screen</strong>Replace with a redacted or recreated screen</div></div>
+                <figcaption><span class="tag tag-before">Before</span><p>Dense, inconsistent legacy module</p><ol class="annotations"><li>Each module used a different table and filter pattern.</li><li>No keyboard order or focus states.</li><li>Critical actions sat next to routine ones.</li></ol></figcaption>
+              </figure>
+              <figure class="figure">
+                <div class="slot" role="img" aria-label="Image placeholder: Modernised Angular screen"><div><strong>Modernised Angular screen</strong>Replace with the same task in the new system</div></div>
+                <figcaption><span class="tag tag-after">After</span><p>Same task on the shared system</p><ol class="annotations"><li>Shared data table with saved filters, used in every product.</li><li>Visible focus and full keyboard path for floor staff.</li><li>Destructive and regulated actions separated and confirmed.</li></ol></figcaption>
+              </figure>
+            </div>
+            <h3>Accessibility proof</h3>
+            <ul class="a11y-grid">
+              <li><h3>Contrast</h3><p>All text and state tokens meet 4.5:1; large text and icons meet 3:1.</p></li>
+              <li><h3>Keyboard</h3><p>Every component has a documented tab order and visible focus ring.</p></li>
+              <li><h3>States</h3><p>Error, warning and success never rely on colour alone.</p></li>
+              <li><h3>Labels</h3><p>Form fields carry programmatic labels and error descriptions.</p></li>
+            </ul>
+            <figure class="figure">
+              <div class="slot" role="img" aria-label="Image placeholder: Component & token spec"><div><strong>Component & token spec</strong>Replace with Figma variables or Storybook screenshot</div></div>
+              <figcaption><p>The token layer every product team builds from</p><ol class="annotations"><li>Semantic tokens (e.g. status-danger) map to tested colour pairs.</li><li>Component states documented once, inherited everywhere.</li><li>Matching Angular component name shown for developer handoff.</li></ol></figcaption>
+            </figure>
+          </section>
+          <section id="impact" aria-labelledby="impact-h">
+            <span class="step-label">Impact</span>
+            <h2 id="impact-h">35% faster from design to development, and a team other products now borrow</h2>
+            <div class="table-wrap"><table class="impact-table">
+              <caption>Measured outcomes</caption>
+              <thead><tr><th scope="col">Result</th><th scope="col">What it measures</th></tr></thead>
+              <tbody>
+                <tr><td>35%</td><td>Reduction in design-to-development timelines across products</td></tr>
+                <tr><td><span class="todo">metric</span></td><td><span class="todo">e.g. components reused across N products, or defects caught pre-QA</span></td></tr>
+                <tr><td>Award</td><td>Achievers Award; work presented at G2E Las Vegas</td></tr>
+              </tbody></table></div>
+            <div class="prose">
+              <h3>Reflection</h3>
+              <p><span class="todo">One honest paragraph: what you'd do differently. E.g. bringing compliance into the system review earlier, or measuring baseline handoff time before starting.</span></p>
+            </div>
+          </section>
+        <nav class="next-case" aria-label="More work">
+          <a class="btn btn-ghost" href="index.html#work">← All case studies</a>
+          <div class="btn-row">
+            <a class="btn btn-ghost" href="#" data-open-nda data-case="Aristocrat casino management platform">Request NDA walkthrough</a>
+            <a class="btn btn-primary" href="case-tata-1mg.html">Next: Tata 1mg →</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Pooja Kudesia · Gurgaon, India</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/poojakudesia" rel="noopener">LinkedIn</a></li>
+        <li><a href="assets/Pooja-Kudesia-Resume.pdf" download>Résumé (PDF)</a></li>
+        <li><a href="mailto:your.name@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+  <dialog id="nda-dialog" aria-labelledby="nda-title">
+    <div class="dialog-inner">
+      <h2 id="nda-title">Request NDA access</h2>
+      <p class="muted">Some screens and figures from Aristocrat and banking work are under NDA. Tell me who you are and I'll send a private walkthrough.</p>
+      <form method="dialog" data-to="your.name@example.com">
+        <div class="field"><label for="nda-name">Your name</label><input id="nda-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="nda-company">Company</label><input id="nda-company" name="company" autocomplete="organization" required></div>
+        <div class="field"><label for="nda-role">Your role</label><input id="nda-role" name="role" autocomplete="organization-title" placeholder="e.g. VP Design, Talent Partner"></div>
+        <div class="field"><label for="nda-case">Case study</label>
+          <select id="nda-case" name="case">
+            <option>Aristocrat casino management platform</option>
+            <option>Tata 1mg growth and onboarding</option>
+            <option>Deutsche Bank and UK Police workflows</option>
+            <option>All of them</option>
+          </select></div>
+        <div class="field"><label for="nda-note">Anything I should know?</label><textarea id="nda-note" name="note" aria-describedby="nda-hint"></textarea><span id="nda-hint" class="hint">Opens a pre-filled email in your mail app.</span></div>
+        <div class="dialog-actions">
+          <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Send request</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>

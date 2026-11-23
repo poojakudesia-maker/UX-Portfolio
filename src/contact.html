@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & résumé · Pooja Kudesia</title>
+  <meta name="description" content="Email, résumé download, LinkedIn and NDA walkthrough requests.">
+  <meta property="og:title" content="Contact & résumé · Pooja Kudesia">
+  <meta property="og:description" content="Email, résumé download, LinkedIn and NDA walkthrough requests.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F766E'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EPK%3C/text%3E%3C/svg%3E">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Pooja Kudesia<small>UX Leader &amp; Architect</small></a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact &amp; résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Contact &amp; résumé</p>
+        <h1>Let's talk about your UX leadership role.</h1>
+        <p class="lede">I usually reply within one working day. For confidential project detail, request an NDA walkthrough below.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2>Email</h2>
+          <p class="contact-value"><a href="mailto:your.name@example.com">your.name@example.com</a></p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="mailto:your.name@example.com?subject=UX%20leadership%20role">Write an email</a>
+            <button type="button" class="btn btn-ghost" data-copy="your.name@example.com" data-status="#copy-status">Copy address</button>
+          </div>
+          <p id="copy-status" class="status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Résumé</h2>
+          <p>Two pages. Roles, outcomes and patents, formatted for ATS and print.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="assets/Pooja-Kudesia-Resume.pdf" download>Download PDF</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h2>LinkedIn &amp; phone</h2>
+          <p class="contact-value"><a href="https://www.linkedin.com/in/poojakudesia" rel="noopener">linkedin.com/in/poojakudesia</a></p>
+          <p class="contact-value"><a href="tel:+919667839435">+91 96678 39435</a></p>
+          <p>Gurgaon, India (IST, UTC+5:30)</p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Confidential work</h2>
+          <p>Aristocrat and banking screens can't be published. I'm happy to walk hiring panels through them privately.</p>
+          <div class="btn-row">
+            <a class="btn btn-ghost" href="mailto:your.name@example.com?subject=NDA%20access%20request" data-open-nda>Request NDA access</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Pooja Kudesia · Gurgaon, India</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/poojakudesia" rel="noopener">LinkedIn</a></li>
+        <li><a href="assets/Pooja-Kudesia-Resume.pdf" download>Résumé (PDF)</a></li>
+        <li><a href="mailto:your.name@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+  <dialog id="nda-dialog" aria-labelledby="nda-title">
+    <div class="dialog-inner">
+      <h2 id="nda-title">Request NDA access</h2>
+      <p class="muted">Some screens and figures from Aristocrat and banking work are under NDA. Tell me who you are and I'll send a private walkthrough.</p>
+      <form method="dialog" data-to="your.name@example.com">
+        <div class="field"><label for="nda-name">Your name</label><input id="nda-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="nda-company">Company</label><input id="nda-company" name="company" autocomplete="organization" required></div>
+        <div class="field"><label for="nda-role">Your role</label><input id="nda-role" name="role" autocomplete="organization-title" placeholder="e.g. VP Design, Talent Partner"></div>
+        <div class="field"><label for="nda-case">Case study</label>
+          <select id="nda-case" name="case">
+            <option>Aristocrat casino management platform</option>
+            <option>Tata 1mg growth and onboarding</option>
+            <option>Deutsche Bank and UK Police workflows</option>
+            <option>All of them</option>
+          </select></div>
+        <div class="field"><label for="nda-note">Anything I should know?</label><textarea id="nda-note" name="note" aria-describedby="nda-hint"></textarea><span id="nda-hint" class="hint">Opens a pre-filled email in your mail app.</span></div>
+        <div class="dialog-actions">
+          <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Send request</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>
