@@ -1,0 +1,5 @@
+# Your site password. Never commit this.
+site-password.txt
+# Encrypted build output (regenerate with: node scripts/protect.mjs)
+dist/
+node_modules/
