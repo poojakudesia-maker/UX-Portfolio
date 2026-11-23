@@ -65,7 +65,7 @@
           </section>
           <section id="research" aria-labelledby="research-h">
             <span class="step-label">Research</span>
-            <h2 id="research-h">Observing users at their desks changed the priorities</h2>
+            <h2 id="research-h">What the research showed</h2>
             <ul class="decision-list">
               <li><h3>Finding 1: <span class="todo">e.g. users re-keyed the same data across screens</span></h3><p><strong>Decision it changed:</strong> <span class="todo">e.g. single entry with carried-forward values</span></p></li>
               <li><h3>Finding 2: <span class="todo">e.g. power users relied on keyboard only</span></h3><p><strong>Decision it changed:</strong> full keyboard paths became a release requirement, which also met accessibility law.</p></li>
@@ -73,7 +73,7 @@
           </section>
           <section id="architecture" aria-labelledby="architecture-h">
             <span class="step-label">Architecture &amp; iteration</span>
-            <h2 id="architecture-h">Fewer screens, validation at the point of entry</h2>
+            <h2 id="architecture-h">Accessibility written into the build standard</h2>
             <ul class="decision-list">
               <li><h3>Call 1: <span class="todo">main structural decision</span></h3><p><span class="todo">why, and what you rejected</span></p></li>
               <li><h3>Call 2: Accessibility as a build standard, not an audit</h3><p>As accessibility SME I wrote the standards the London engineering team built against.</p></li>
@@ -82,18 +82,19 @@
           </section>
           <section id="solution" aria-labelledby="solution-h">
             <span class="step-label">Solution</span>
-            <h2 id="solution-h">A guided workflow with errors caught before submission</h2>
+            <h2 id="solution-h">Legacy workflow vs. redesign</h2>
             <div class="compare">
               <figure class="figure">
                 <div class="slot" role="img" aria-label="Image placeholder: Legacy workflow"><div><strong>Legacy workflow</strong>Recreate without client data</div></div>
-                <figcaption><span class="tag tag-before">Before</span><p>Before</p><ol class="annotations"><li>Data spread across several screens.</li><li>Errors only shown after submit.</li><li>Mouse-only interactions.</li></ol></figcaption>
+                <figcaption><span class="tag tag-before">Before</span><p>Before</p><ol class="annotations"><li>Data spread across several screens.</li><li>Errors only shown after submit.</li><li>Mouse-only interactions.</li></ol><p class="muted" style="margin:.75rem 0 0;font-weight:400"><span class="todo">suggested notes; check each against the real screen</span></p></figcaption>
               </figure>
               <figure class="figure">
                 <div class="slot" role="img" aria-label="Image placeholder: Redesigned workflow"><div><strong>Redesigned workflow</strong>Recreate without client data</div></div>
-                <figcaption><span class="tag tag-after">After</span><p>After</p><ol class="annotations"><li>Stepped flow with clear progress.</li><li>Inline validation tied to each field.</li><li>Complete keyboard path for expert users.</li></ol></figcaption>
+                <figcaption><span class="tag tag-after">After</span><p>After</p><ol class="annotations"><li>Stepped flow with clear progress.</li><li>Inline validation tied to each field.</li><li>Complete keyboard path for expert users.</li></ol><p class="muted" style="margin:.75rem 0 0;font-weight:400"><span class="todo">suggested notes; check each against the real screen</span></p></figcaption>
               </figure>
             </div>
             <h3>Accessibility proof</h3>
+            <p><span class="todo">confirm each item below matches what shipped</span></p>
             <ul class="a11y-grid">
               <li><h3>Keyboard</h3><p>Every task completable without a mouse.</p></li>
               <li><h3>Errors</h3><p>Messages linked to fields and announced to screen readers.</p></li>

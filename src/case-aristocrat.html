@@ -39,7 +39,7 @@
         <p class="lede">Aristocrat's casino management software runs cash, player and compliance workflows on live casino floors. I built the UX team that is moving it from legacy WinForms to Angular, and set the design system and accessibility rules every product team now ships against.</p>
         <dl class="tldr"><div><dt>My role</dt><dd>Sr. Manager, UX. Built and lead the team</dd></div><div><dt>Timeline</dt><dd>2021 – present</dd></div><div><dt>Team</dt><dd><span class="todo">e.g. 6 designers, 2 UX writers, 1 design-engineer</span></dd></div><div><dt>Stack</dt><dd>Figma variables, Angular, HTML/CSS, Claude AI</dd></div><div><dt>Core constraint</dt><dd>Gaming regulation and 24/7 floor operations</dd></div><div><dt>Scope</dt><dd>Cross-product: <span class="todo">name the products / modules</span></dd></div></dl>
         <h2 class="visually-hidden">Top outcomes</h2>
-        <ul class="outcomes"><li><strong>35%</strong>faster design-to-development</li><li><strong>WCAG 2.1 AA</strong>baked into shared components</li><li><strong>Achievers</strong>Award, plus G2E Las Vegas talk</li></ul>
+        <ul class="outcomes"><li><strong>35%</strong>faster design-to-development</li><li><strong>AA</strong>WCAG 2.1 standard across products</li><li><strong><span class="todo">metric</span></strong>e.g. components reused or defects avoided</li></ul>
       </div>
     </header>
 
@@ -50,7 +50,7 @@
             <span class="step-label">Context</span>
             <h2 id="context-h">A platform casinos can't switch off, built on WinForms</h2>
             <div class="prose">
-              <p>Casino operators use the platform to manage player accounts, cage and cash, floor operations and regulatory reporting. Several products had grown separately on WinForms, each with its own patterns. Staff trained on one module had to relearn another.</p>
+              <p>Casino operators use the platform to manage player accounts, cage and cash, floor operations and regulatory reporting. The legacy products were built on WinForms and are being modernised to Angular. <span class="todo">how many products, and how far their patterns had drifted apart</span></p>
               <p><strong>What I owned:</strong> UX strategy, hiring and structure of the UX team, design system governance, accessibility standards, and the AI design-to-code initiative. <strong>What the team shipped:</strong> screen design, UX writing and component code across product lines.</p>
             </div>
           </section>
@@ -58,16 +58,16 @@
             <span class="step-label">Stakes &amp; problem</span>
             <h2 id="problem-h">Every inconsistent screen was paid for twice: once in build time, once in operator error</h2>
             <div class="prose">
-              <p><strong>Business problem.</strong> Modernising to Angular product by product would multiply the inconsistency unless the patterns were fixed first. Each team was redrawing the same tables, forms and approval flows, and engineers were rebuilding them.</p>
+              <p><strong>Business problem.</strong> Modernising to Angular product by product would multiply the inconsistency unless the patterns were fixed first. <span class="todo">evidence of duplication, e.g. the same table rebuilt in N products</span></p>
               <p><strong>User problem.</strong> Floor and back-office staff work under time pressure with money and regulated data. Inconsistent patterns mean slower tasks and higher error risk.</p>
               <p><strong>Cost of doing nothing.</strong> <span class="todo">Quantify: e.g. duplicated components per product, average handoff cycle in days, or audit findings</span></p>
             </div>
           </section>
           <section id="research" aria-labelledby="research-h">
             <span class="step-label">Research</span>
-            <h2 id="research-h">Handoff, not design, was where the time went</h2>
+            <h2 id="research-h">What discovery showed about the 35%</h2>
             <div class="prose">
-              <p>Before proposing a system, I mapped where time was lost between a design decision and working code.</p>
+              <p><span class="todo">how you found where design-to-dev time was going: handoff audit, engineer interviews, ticket analysis</span></p>
             </div>
             <ul class="decision-list">
               <li><h3>Finding 1: <span class="todo">e.g. most rework came from spec gaps, not design changes</span></h3><p><strong>Decision it changed:</strong> we put a design-engineer inside the UX team so specs shipped as Angular components, not static files.</p></li>
@@ -75,7 +75,7 @@
             </ul>
             <figure class="figure">
               <div class="slot" role="img" aria-label="Image placeholder: Handoff journey map"><div><strong>Handoff journey map</strong>Replace with your as-is design-to-dev journey (WebP, under 200 KB)</div></div>
-              <figcaption><p>Where a design decision stalled on its way to production</p><ol class="annotations"><li>Shows each handoff point between design, product and engineering.</li><li>Red markers are the steps that caused rework. These set the system's priorities.</li><li>Note the QA stage: this is where accessibility defects were surfacing.</li></ol></figcaption>
+              <figcaption><p>Where a design decision stalled on its way to production</p><ol class="annotations"><li>Shows each handoff point between design, product and engineering.</li><li>Red markers are the steps that caused rework. These set the system's priorities.</li><li>Note the QA stage: this is where accessibility defects were surfacing.</li></ol><p class="muted" style="margin:.75rem 0 0;font-weight:400"><span class="todo">suggested notes; check each against the real image</span></p></figcaption>
             </figure>
           </section>
           <section id="architecture" aria-labelledby="architecture-h">
@@ -95,14 +95,15 @@
             <div class="compare">
               <figure class="figure">
                 <div class="slot" role="img" aria-label="Image placeholder: Legacy WinForms screen"><div><strong>Legacy WinForms screen</strong>Replace with a redacted or recreated screen</div></div>
-                <figcaption><span class="tag tag-before">Before</span><p>Dense, inconsistent legacy module</p><ol class="annotations"><li>Each module used a different table and filter pattern.</li><li>No keyboard order or focus states.</li><li>Critical actions sat next to routine ones.</li></ol></figcaption>
+                <figcaption><span class="tag tag-before">Before</span><p>Dense, inconsistent legacy module</p><ol class="annotations"><li>Each module used a different table and filter pattern.</li><li>No keyboard order or focus states.</li><li>Critical actions sat next to routine ones.</li></ol><p class="muted" style="margin:.75rem 0 0;font-weight:400"><span class="todo">suggested notes; check each against the real screen</span></p></figcaption>
               </figure>
               <figure class="figure">
                 <div class="slot" role="img" aria-label="Image placeholder: Modernised Angular screen"><div><strong>Modernised Angular screen</strong>Replace with the same task in the new system</div></div>
-                <figcaption><span class="tag tag-after">After</span><p>Same task on the shared system</p><ol class="annotations"><li>Shared data table with saved filters, used in every product.</li><li>Visible focus and full keyboard path for floor staff.</li><li>Destructive and regulated actions separated and confirmed.</li></ol></figcaption>
+                <figcaption><span class="tag tag-after">After</span><p>Same task on the shared system</p><ol class="annotations"><li>Shared data table with saved filters, used in every product.</li><li>Visible focus and full keyboard path for floor staff.</li><li>Destructive and regulated actions separated and confirmed.</li></ol><p class="muted" style="margin:.75rem 0 0;font-weight:400"><span class="todo">suggested notes; check each against the real screen</span></p></figcaption>
               </figure>
             </div>
             <h3>Accessibility proof</h3>
+            <p><span class="todo">confirm each item below matches what shipped</span></p>
             <ul class="a11y-grid">
               <li><h3>Contrast</h3><p>All text and state tokens meet 4.5:1; large text and icons meet 3:1.</p></li>
               <li><h3>Keyboard</h3><p>Every component has a documented tab order and visible focus ring.</p></li>
@@ -111,7 +112,7 @@
             </ul>
             <figure class="figure">
               <div class="slot" role="img" aria-label="Image placeholder: Component & token spec"><div><strong>Component & token spec</strong>Replace with Figma variables or Storybook screenshot</div></div>
-              <figcaption><p>The token layer every product team builds from</p><ol class="annotations"><li>Semantic tokens (e.g. status-danger) map to tested colour pairs.</li><li>Component states documented once, inherited everywhere.</li><li>Matching Angular component name shown for developer handoff.</li></ol></figcaption>
+              <figcaption><p>The token layer every product team builds from</p><ol class="annotations"><li>Semantic tokens (e.g. status-danger) map to tested colour pairs.</li><li>Component states documented once, inherited everywhere.</li><li>Matching Angular component name shown for developer handoff.</li></ol><p class="muted" style="margin:.75rem 0 0;font-weight:400"><span class="todo">suggested notes; check each against the real image</span></p></figcaption>
             </figure>
           </section>
           <section id="impact" aria-labelledby="impact-h">
